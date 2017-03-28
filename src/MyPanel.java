@@ -191,7 +191,7 @@ public class MyPanel extends JPanel {
 	//Check each tile for adjacent mines
 			public void checkBombs  (int x, int y){
 
-
+ 
 
 				
 				//Set The Number on Tile

@@ -10,7 +10,7 @@ import javax.swing.JLabel;
 public class Main {
 	static JLabel lblTime;
 	
-	public static Timer timer;
+	public static Timer timer; 
 	public static TimerCounter tasknew;
 	public static void main(String[] args) {
 		JFrame myFrame = new JFrame("Minesweeper");

@@ -11,7 +11,7 @@ import javax.swing.JFrame;
 public class MyMouseAdapter extends MouseAdapter {
 	public static int flags = 14;
 	private Random generator = new Random();
-	public void mousePressed(MouseEvent e) {
+	public void mousePressed(MouseEvent e) { 
 		switch (e.getButton()) {
 		case 1:		//Left mouse button
 			Component c = e.getComponent();
