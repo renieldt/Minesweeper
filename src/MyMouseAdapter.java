@@ -18,7 +18,7 @@ public class MyMouseAdapter extends MouseAdapter {
 			while (!(c instanceof JFrame)) {
 				c = c.getParent();
 				if (c == null) {
-					return;
+					return; 
 				}
 			}
 			JFrame myFrame = (JFrame) c;

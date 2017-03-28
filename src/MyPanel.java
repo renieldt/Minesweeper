@@ -195,7 +195,7 @@ public class MyPanel extends JPanel {
 
 				
 				//Set The Number on Tile
-	
+	 
 
 	
 					//If Not Mine Found

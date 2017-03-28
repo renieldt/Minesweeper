@@ -23,7 +23,7 @@ public class Main {
 		myFrame.add(myPanel);
 		
 		MyMouseAdapter myMouseAdapter = new MyMouseAdapter();
-		myFrame.addMouseListener(myMouseAdapter);
+		myFrame.addMouseListener(myMouseAdapter); 
 		
 		
 		//Timer
