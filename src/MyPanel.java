@@ -19,6 +19,7 @@ public class MyPanel extends JPanel {
 	public int mouseDownGridY = 0;
 	public int difficult = 0;
 	public Color[][] colorArray = new Color[TOTAL_COLUMNS][TOTAL_ROWS];
+	public boolean minesOnField[][] = new boolean[TOTAL_COLUMNS][TOTAL_ROWS];
 	public int[][] minas = new int [TOTAL_COLUMNS][TOTAL_ROWS];
 	public MyPanel() {   //This is the constructor... this code runs first to initialize
 		if (INNER_CELL_SIZE + (new Random()).nextInt(1) < 1) {	//Use of "random" to prevent unwanted Eclipse warning
@@ -166,6 +167,8 @@ public class MyPanel extends JPanel {
 			Color newColor = Color.BLACK;
 			colorArray[x][y] = newColor;
 			this.repaint();
+			//add the code for when this happens, the game ends. I think it goes in MouseAdapter
+			
 		} else {
 			Color newColor = Color.LIGHT_GRAY;
 			colorArray[x][y] = newColor;
@@ -174,6 +177,33 @@ public class MyPanel extends JPanel {
 		}
 		
 	}
+	
+	public boolean isMine(int x, int y){
+		if(minesOnField[x][y] == true){
+			return true;
+		}
+		return false;
+	}
+	
+
+	
+	
+	//Check each tile for adjacent mines
+			public void checkBombs  (int x, int y){
+
+
+
+				
+				//Set The Number on Tile
+	
+
+	
+					//If Not Mine Found
+					
+	
+			
+		}
+	
 }
 
 	

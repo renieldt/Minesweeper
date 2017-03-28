@@ -5,9 +5,11 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Random;
 
+
 import javax.swing.JFrame;
 
 public class MyMouseAdapter extends MouseAdapter {
+	public static int flags = 14;
 	private Random generator = new Random();
 	public void mousePressed(MouseEvent e) {
 		switch (e.getButton()) {
